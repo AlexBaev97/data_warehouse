@@ -1,0 +1,10 @@
+erDiagram
+    category ||--o{ product : "содержит"
+    supplier ||--o{ delivery : "поставляет"
+    kiosk    ||--o{ delivery : "получает"
+    kiosk    ||--o{ employee : "закрепляет"
+    employee ||--o{ delivery : "оформляет"
+    delivery ||--|{ delivery_item : "состоит из"
+    product  ||--o{ delivery_item : "входит в"
+    kiosk    ||--o{ kiosk_stock : "остатки"
+    product  ||--o{ kiosk_stock : "остатки"
